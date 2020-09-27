@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.uob.uobbank.UobbankApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 119.378 s - in com.uob.uobbank.UobbankApplicationTests
