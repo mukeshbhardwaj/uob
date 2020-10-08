@@ -1,0 +1,45 @@
+zuul:
+  prefix: /FoodAppApiGatway
+  routes:
+    resource:
+    VENDOR-SERVICE:
+      path: /vendors/**
+      service-id: VENDOR-SERVICE
+    USER-SERVICE:
+      path: /user/**
+      service-id: USER-SERVICE
+    TRANSACTION-SERVICE:
+      path: /transaction/**
+      service-id: TRANSACTION-SERVICE
+      
+server:
+  port: 9990
+  
+eureka:
+  client:
+    registerwitheureka: true
+    fetchregistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      hostname: localhost
+      preferIpAddress: true
+  
+spring:
+  application:
+    name: zuul-apigatway
+
+endpoints:
+  routes:
+    enabled-by-default: true
+  
+  restart:
+    enabled-by-default: true
+   
+  shutdown: 
+     enabled-by-default: true
+
+
+   
+    
+   
